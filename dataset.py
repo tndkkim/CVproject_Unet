@@ -131,12 +131,12 @@ def rle_decode(rle, width, height):
 def get_train_transforms():
     return A.Compose([
         # Elastic deformation
-        # A.ElasticTransform(
-        #     alpha=720,
-        #     sigma=24,
-        #     alpha_affine=24,
-        #     p=0.3
-        # ),
+        A.ElasticTransform(
+            alpha=720,
+            sigma=24,
+            alpha_affine=24,
+            p=0.3
+        ),
         
         # Geometric transforms
         A.HorizontalFlip(p=0.5),
