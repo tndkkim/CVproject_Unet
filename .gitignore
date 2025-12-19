@@ -1,2 +1,21 @@
-TransUnet(ViT)/TransUNet/R50-ViT-B_16.npz
+# Model weights
 *.npz
+*.pth
+*.ckpt
+*.h5
+*.weights
+**/pretrained_weights/
+**/checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
+venv/
